@@ -1,4 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using System;
+using ToDoAPI.Models.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<TodoDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MyConnection"));
+});
 
 // Add services to the container.
 // Vlad first commit

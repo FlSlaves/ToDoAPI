@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj": {}
+    "D:\\Work\\Programing\\CS\\SoftServeToDo\\ToDoAPI\\ToDoAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj": {
+    "D:\\Work\\Programing\\CS\\SoftServeToDo\\ToDoAPI\\ToDoAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj",
+        "projectUniqueName": "D:\\Work\\Programing\\CS\\SoftServeToDo\\ToDoAPI\\ToDoAPI.csproj",
         "projectName": "ToDoAPI",
-        "projectPath": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj",
-        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\ToDoAPI\\obj\\",
+        "projectPath": "D:\\Work\\Programing\\CS\\SoftServeToDo\\ToDoAPI\\ToDoAPI.csproj",
+        "packagesPath": "C:\\Users\\vvbog\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\Programing\\CS\\SoftServeToDo\\ToDoAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vvbog\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +41,26 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -64,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
