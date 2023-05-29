@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ProgramingProject\\ToDo\\ToDoAPI\\ToDoAPI.csproj": {}
+    "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj": {}
   },
   "projects": {
-    "E:\\ProgramingProject\\ToDo\\ToDoAPI\\ToDoAPI.csproj": {
+    "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProgramingProject\\ToDo\\ToDoAPI\\ToDoAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj",
         "projectName": "ToDoAPI",
-        "projectPath": "E:\\ProgramingProject\\ToDo\\ToDoAPI\\ToDoAPI.csproj",
-        "packagesPath": "C:\\Users\\maxsh\\.nuget\\packages\\",
-        "outputPath": "E:\\ProgramingProject\\ToDo\\ToDoAPI\\obj\\",
+        "projectPath": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\ToDoAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\Visual studio SDK\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\maxsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,8 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,6 +43,10 @@
             "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.3, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -98,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

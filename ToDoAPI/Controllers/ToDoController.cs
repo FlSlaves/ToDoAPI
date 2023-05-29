@@ -9,6 +9,7 @@ using System.Xml.XPath;
 using ToDoAPI.DTO;
 using ToDoAPI.Models;
 using ToDoAPI.Models.Data;
+using ToDoAPI.Services;
 
 namespace ToDoAPI.Controllers
 {
@@ -16,43 +17,42 @@ namespace ToDoAPI.Controllers
     [Route("api/[controller]")]
     public class ToDoController : ControllerBase
     {
-        private readonly TodoDbContext Context;
+        private readonly IToDoService toDoService;
 
-        public ToDoController(TodoDbContext todoContext)
+        public ToDoController(IToDoService _toDoService)
         {
-            Context = todoContext;
+            toDoService = _toDoService;
         }
 
         // Insert new Task (User??)
         [HttpPost("InsertTask/{task}/{description}/{status}")]
         public async Task<IActionResult> InsertTask(string task, string description, string status)
         {
-            var service = new ToDoListService(Context);
-            return await service.InsertTask(task, description, status);
+            await toDoService.InsertTask(task, description, status);
+            return Ok();
         }
 
         //Get All tasks for Owner 
         [HttpGet("GetTask/{owner}")]
         public async Task<ActionResult<List<ToDoListModelDTO>>> GetTasks(string owner)
         {
-            var service = new ToDoListService(Context);
-            return await service.GetTasks(owner);
+            return Ok(await toDoService.GetTasks(owner));
         }
 
         //Треба буде на фронті сформувати patch JSON і відравити його на бек
         [HttpPatch("UpdateTask/{id}")]
-        public async Task<IActionResult> UpdateTask(int id, [FromBody] JsonPatchDocument<ToDoListModel> patchDocument)
+        public async Task<IActionResult> UpdateTask(int id, [FromBody] JsonPatchDocument patchDocument)
         {
-            var service = new ToDoListService(Context);
-            return await service.UpdateTask(id, patchDocument);
+           await toDoService.UpdateTaskAs(id, patchDocument);
+           return Ok();
         }
 
         // Delete task by Id
         [HttpDelete("DeleteTask/{id}")]
         public async Task<IActionResult> DeleteTask(int id)
         {
-            var service = new ToDoListService(Context);
-            return await service.DeleteTask(id);
+            await toDoService.DeleteTask(id);
+            return Ok();
         }
     }
 }

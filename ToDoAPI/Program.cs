@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using ToDoAPI.Models.Data;
+using ToDoAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,11 +12,11 @@ builder.Services.AddDbContext<TodoDbContext>(options =>
 
 // Add services to the container.
 // Vlad first commit
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddNewtonsoftJson();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddTransient<IToDoService, ToDoService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
