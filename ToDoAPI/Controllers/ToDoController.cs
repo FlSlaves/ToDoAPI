@@ -23,12 +23,11 @@ namespace ToDoAPI.Controllers
         {
             toDoService = _toDoService;
         }
-
         // Insert new Task (User??)
-        [HttpPost("InsertTask/{task}/{description}/{status}")]
-        public async Task<IActionResult> InsertTask(string task, string description, string status)
+        [HttpPost("InsertTask")]
+        public async Task<IActionResult> InsertTask([FromBody] ToDoListModel taskModel)
         {
-            await toDoService.InsertTask(task, description, status);
+            await toDoService.InsertTask(taskModel.Task, taskModel.Description, taskModel.Status, taskModel.Owner);
             return Ok();
         }
 

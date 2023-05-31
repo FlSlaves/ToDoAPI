@@ -27,8 +27,6 @@ namespace ToDoAPI.Services
                     _context.ToDoList1.Remove(task);
                     await _context.SaveChangesAsync();
                 }
-
-                _context.ToDoList1.Remove(task);
                 await _context.SaveChangesAsync();
             }
             catch(DbUpdateException ex) 
@@ -60,7 +58,7 @@ namespace ToDoAPI.Services
             }
         }
 
-        public async Task InsertTask(string task, string description, string status)
+        public async Task InsertTask(string task, string description, string status, string owner)
         {
             try
             {
@@ -69,7 +67,7 @@ namespace ToDoAPI.Services
                     Task = task,
                     Description = description,
                     Status = status,
-                    Owner = "IDKowner"
+                    Owner = owner
                 };
 
                 _context.ToDoList1.Add(toDoList);
