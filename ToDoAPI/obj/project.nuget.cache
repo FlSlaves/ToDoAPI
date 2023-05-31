@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6dDIEetp2eYjTei0AKQI3UI+ItSHA3LRsixtRKEPp5KUgDflSWNtCID5tnMZq/EeDW7AsbrbFsw/WUmajknE3w==",
+  "dgSpecHash": "VCsOuwQqBLJKO2LVSJgaPdr7+dwO0E3yLlFoyvHDQu93VA8cSxdKmyH7+gRxx6JSfO14FpLAcEf+Eyv1FMCt/w==",
   "success": true,
-  "projectFilePath": "E:\\ProgramingProject\\ToDo\\ToDoAPI\\ToDoAPI.csproj",
+  "projectFilePath": "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\maxsh\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\maxsh\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\maxsh\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\maxsh\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

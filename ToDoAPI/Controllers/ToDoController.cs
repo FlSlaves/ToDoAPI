@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.JsonPatch;
+﻿using BLLToDo.DTO;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
@@ -6,10 +7,8 @@ using System.Net;
 using System.Numerics;
 using System.Threading.Tasks;
 using System.Xml.XPath;
-using ToDoAPI.DTO;
-using ToDoAPI.Models;
-using ToDoAPI.Models.Data;
-using ToDoAPI.Services;
+using ToDoAPI.BLLToDo.Services;
+using ToDoAPI.DALToDo.Models;
 
 namespace ToDoAPI.Controllers
 {
