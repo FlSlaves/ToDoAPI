@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj": {}
+    "E:\\ProgramingProject\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj": {}
   },
   "projects": {
-    "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {
+    "E:\\ProgramingProject\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
+        "projectUniqueName": "E:\\ProgramingProject\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
         "projectName": "BLLToDo",
-        "projectPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
-        "packagesPath": "C:\\Users\\vvbog\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\obj\\",
+        "projectPath": "E:\\ProgramingProject\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
+        "packagesPath": "C:\\Users\\maxsh\\.nuget\\packages\\",
+        "outputPath": "E:\\ProgramingProject\\ToDoAPI\\BLLToDo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Visual studio SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vvbog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maxsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
-                "projectPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj"
+              "E:\\ProgramingProject\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
+                "projectPath": "E:\\ProgramingProject\\ToDoAPI\\DALToDo\\DALToDo.csproj"
               }
             }
           }
@@ -77,17 +82,21 @@
         }
       }
     },
-    "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
+    "E:\\ProgramingProject\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj",
+        "projectUniqueName": "E:\\ProgramingProject\\ToDoAPI\\DALToDo\\DALToDo.csproj",
         "projectName": "DALToDo",
-        "projectPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj",
-        "packagesPath": "C:\\Users\\vvbog\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\obj\\",
+        "projectPath": "E:\\ProgramingProject\\ToDoAPI\\DALToDo\\DALToDo.csproj",
+        "packagesPath": "C:\\Users\\maxsh\\.nuget\\packages\\",
+        "outputPath": "E:\\ProgramingProject\\ToDoAPI\\DALToDo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Visual studio SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vvbog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maxsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,6 +104,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -158,17 +168,21 @@
         }
       }
     },
-    "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj": {
+    "E:\\ProgramingProject\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj",
+        "projectUniqueName": "E:\\ProgramingProject\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj",
         "projectName": "ToDoAPI",
-        "projectPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj",
-        "packagesPath": "C:\\Users\\vvbog\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\ToDoAPI\\obj\\",
+        "projectPath": "E:\\ProgramingProject\\ToDoAPI\\ToDoAPI\\ToDoAPI.csproj",
+        "packagesPath": "C:\\Users\\maxsh\\.nuget\\packages\\",
+        "outputPath": "E:\\ProgramingProject\\ToDoAPI\\ToDoAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Visual studio SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vvbog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maxsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,6 +190,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -183,8 +198,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {
-                "projectPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\BLLToDo.csproj"
+              "E:\\ProgramingProject\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {
+                "projectPath": "E:\\ProgramingProject\\ToDoAPI\\BLLToDo\\BLLToDo.csproj"
               }
             }
           }

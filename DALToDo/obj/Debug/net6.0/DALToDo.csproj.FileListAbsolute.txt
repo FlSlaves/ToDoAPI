@@ -34,3 +34,15 @@ D:\Work\Programing\SoftServe\ToDoAPI\DALToDo\obj\Debug\net6.0\DALToDo.dll
 D:\Work\Programing\SoftServe\ToDoAPI\DALToDo\obj\Debug\net6.0\refint\DALToDo.dll
 D:\Work\Programing\SoftServe\ToDoAPI\DALToDo\obj\Debug\net6.0\DALToDo.pdb
 D:\Work\Programing\SoftServe\ToDoAPI\DALToDo\obj\Debug\net6.0\ref\DALToDo.dll
+E:\ProgramingProject\ToDoAPI\DALToDo\bin\Debug\net6.0\DALToDo.deps.json
+E:\ProgramingProject\ToDoAPI\DALToDo\bin\Debug\net6.0\DALToDo.dll
+E:\ProgramingProject\ToDoAPI\DALToDo\bin\Debug\net6.0\DALToDo.pdb
+E:\ProgramingProject\ToDoAPI\DALToDo\obj\Debug\net6.0\DALToDo.csproj.AssemblyReference.cache
+E:\ProgramingProject\ToDoAPI\DALToDo\obj\Debug\net6.0\DALToDo.GeneratedMSBuildEditorConfig.editorconfig
+E:\ProgramingProject\ToDoAPI\DALToDo\obj\Debug\net6.0\DALToDo.AssemblyInfoInputs.cache
+E:\ProgramingProject\ToDoAPI\DALToDo\obj\Debug\net6.0\DALToDo.AssemblyInfo.cs
+E:\ProgramingProject\ToDoAPI\DALToDo\obj\Debug\net6.0\DALToDo.csproj.CoreCompileInputs.cache
+E:\ProgramingProject\ToDoAPI\DALToDo\obj\Debug\net6.0\DALToDo.dll
+E:\ProgramingProject\ToDoAPI\DALToDo\obj\Debug\net6.0\refint\DALToDo.dll
+E:\ProgramingProject\ToDoAPI\DALToDo\obj\Debug\net6.0\DALToDo.pdb
+E:\ProgramingProject\ToDoAPI\DALToDo\obj\Debug\net6.0\ref\DALToDo.dll
