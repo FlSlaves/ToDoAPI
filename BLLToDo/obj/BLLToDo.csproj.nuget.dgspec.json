@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ProgramingProject\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {}
+    "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {}
   },
   "projects": {
-    "E:\\ProgramingProject\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {
+    "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProgramingProject\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
         "projectName": "BLLToDo",
-        "projectPath": "E:\\ProgramingProject\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
-        "packagesPath": "C:\\Users\\maxsh\\.nuget\\packages\\",
-        "outputPath": "E:\\ProgramingProject\\ToDoAPI\\BLLToDo\\obj\\",
+        "projectPath": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\BLLToDo\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\Visual studio SDK\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\maxsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\ProgramingProject\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
-                "projectPath": "E:\\ProgramingProject\\ToDoAPI\\DALToDo\\DALToDo.csproj"
+              "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
+                "projectPath": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\DALToDo\\DALToDo.csproj"
               }
             }
           }
@@ -49,6 +44,18 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "JWT": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
             "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
               "version": "[7.0.5, )"
@@ -78,25 +85,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\ProgramingProject\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
+    "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProgramingProject\\ToDoAPI\\DALToDo\\DALToDo.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\DALToDo\\DALToDo.csproj",
         "projectName": "DALToDo",
-        "projectPath": "E:\\ProgramingProject\\ToDoAPI\\DALToDo\\DALToDo.csproj",
-        "packagesPath": "C:\\Users\\maxsh\\.nuget\\packages\\",
-        "outputPath": "E:\\ProgramingProject\\ToDoAPI\\DALToDo\\obj\\",
+        "projectPath": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\DALToDo\\DALToDo.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\DALToDo\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\Visual studio SDK\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\maxsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,7 +107,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -127,7 +129,17 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
             },
@@ -136,6 +148,12 @@
               "version": "[7.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
             },
@@ -164,7 +182,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
