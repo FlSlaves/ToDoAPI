@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
 using System;
 using System.Text;
 using ToDoAPI.BLLToDo.Services;
@@ -12,7 +13,16 @@ using ToDoAPI.DALToDo.Models.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Vlad first commit
+
+//logger
+var loger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .Enrich.FromLogContext()
+    .CreateLogger();
+
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(loger);
+
 builder.Services.AddControllers().AddNewtonsoftJson();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -46,8 +56,7 @@ builder.Services.AddTransient<IToDoService, ToDoService>();
 builder.Services.AddTransient<IAuthorizeService, AuthorizeService>();
 
 var app = builder.Build();
-var loggerFactory = app.Services.GetService<ILoggerFactory>();
-loggerFactory.AddFile(builder.Configuration["Logging:LogFilePath"].ToString());
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

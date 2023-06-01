@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {}
+    "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {
+    "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
+        "projectUniqueName": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
         "projectName": "BLLToDo",
-        "projectPath": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
-        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\BLLToDo\\obj\\",
+        "projectPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
+        "packagesPath": "C:\\Users\\vvbog\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vvbog\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
-                "projectPath": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\DALToDo\\DALToDo.csproj"
+              "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
+                "projectPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj"
               }
             }
           }
@@ -64,9 +64,21 @@
               "target": "Package",
               "version": "[7.0.5, )"
             },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            },
             "Serilog.Extensions.Logging.File": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             }
           },
           "imports": [
@@ -85,21 +97,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
+    "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\DALToDo\\DALToDo.csproj",
+        "projectUniqueName": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj",
         "projectName": "DALToDo",
-        "projectPath": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\DALToDo\\DALToDo.csproj",
-        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\Desktop\\start\\ToDoAPI\\DALToDo\\obj\\",
+        "projectPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj",
+        "packagesPath": "C:\\Users\\vvbog\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vvbog\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -161,9 +173,21 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            },
             "Serilog.Extensions.Logging.File": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             }
           },
           "imports": [
@@ -182,7 +206,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,7 @@
 ﻿using BLLToDo.DTO;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using ToDoAPI.DALToDo.Models;
 using ToDoAPI.DALToDo.Models.Data;
 
@@ -8,11 +9,13 @@ namespace ToDoAPI.BLLToDo.Services
 {
     public class ToDoService : IToDoService
     {
+        private readonly ILogger<ToDoService> _logger;
         private readonly TodoDbContext _context;
 
-        public ToDoService(TodoDbContext context)
+        public ToDoService(TodoDbContext context, ILogger<ToDoService> logger)
         {
             _context = context;
+            _logger = logger;
         }
         public async Task DeleteTask(int id)
         {
@@ -25,9 +28,11 @@ namespace ToDoAPI.BLLToDo.Services
                     await _context.SaveChangesAsync();
                 }
                 await _context.SaveChangesAsync();
+                _logger.LogInformation("Task deleted at:" + DateTime.Now);
             }
             catch(DbUpdateException ex) 
             {
+                _logger.LogError(ex, "Failed to delete a at:" + DateTime.Now);
                 throw new Exception(ex.Message);
             }
         }
@@ -46,11 +51,13 @@ namespace ToDoAPI.BLLToDo.Services
                     Status = t.Status,
                     Owner = t.Owner
                 }).ToListAsync();
+                _logger.LogInformation("Task got at:" + DateTime.Now);
                 return await tasks;
             }
             catch
             (DbUpdateException ex)
             {
+                _logger.LogError(ex, "Failed to get at:" + DateTime.Now);
                 throw new Exception(ex.Message);
             }
         }
@@ -69,10 +76,12 @@ namespace ToDoAPI.BLLToDo.Services
 
                 _context.ToDoList1.Add(toDoList);
                 await _context.SaveChangesAsync();
+                _logger.LogInformation("Task inserted at:" + DateTime.Now);
             }
             catch
             (DbUpdateException ex)
             {
+                _logger.LogError(ex, "Failed to insert at:" + DateTime.Now);
                 throw new Exception(ex.Message);
             }
         }
@@ -87,11 +96,13 @@ namespace ToDoAPI.BLLToDo.Services
                 {
                     patchDocument.ApplyTo(task);
                     await _context.SaveChangesAsync();
+                    _logger.LogInformation("Task updated at:" + DateTime.Now);
                 }
             }
             catch
             (DbUpdateException ex)
             {
+                _logger.LogError(ex, "Failed to update at:" + DateTime.Now);
                 throw new DbUpdateException(ex.Message);
             }
         }

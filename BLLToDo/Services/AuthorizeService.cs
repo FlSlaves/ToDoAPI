@@ -1,23 +1,28 @@
 ﻿using BLLToDo.DTO;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using ToDoAPI.BLLToDo.Services;
+using Serilog;
 
 namespace BLLToDo.Services
 {
     public class AuthorizeService : IAuthorizeService
     {
+        private readonly ILogger<AuthorizeService> _logger;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly IConfiguration _options;
-        public AuthorizeService(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, IConfiguration options)
+        public AuthorizeService(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, IConfiguration options, ILogger<AuthorizeService> logger)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _options = options;
+            _logger = logger;
         }
 
         public async Task<ResponseMessage> SignUp(UserRegParam paramUser)
@@ -43,8 +48,10 @@ namespace BLLToDo.Services
             }
             else
             {
+                _logger.LogError("Failed to register user at:" + DateTime.Now);
                 return new ResponseMessage() { Status = "Error", Message = "Some errors, pleace check your data" };
             }
+            _logger.LogInformation("User registered at:" + DateTime.Now);
             return new ResponseMessage() { Message = "User Registered!" };
         }
         public async Task<ResponseMessage> SignIn(UserLogParam paramUser)
@@ -55,9 +62,11 @@ namespace BLLToDo.Services
             {
                 IEnumerable<Claim> claims = await _userManager.GetClaimsAsync(user);
                 var token = GetToken(claims);
+                _logger.LogInformation("User logined at:" + DateTime.Now);
                 return new ResponseMessage() { Token = new JwtSecurityTokenHandler().WriteToken(token), Message = "Login success!" };
 
             }
+            _logger.LogError("Failed to signed in at:" + DateTime.Now);
             return new ResponseMessage() { Status = "Error", Message = "User not found!" };
         }
 
@@ -72,7 +81,7 @@ namespace BLLToDo.Services
                 claims: claims,
                 signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
                 );
-
+            _logger.LogInformation("JWT Token got at:" + DateTime.Now);
             return token;
         }
     }
