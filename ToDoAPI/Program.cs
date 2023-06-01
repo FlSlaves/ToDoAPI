@@ -15,7 +15,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IToDoService, ToDoService>();
 DALToDoModule.Load(builder.Services, builder.Configuration);
 var app = builder.Build();
-
+var loggerFactory = app.Services.GetService<ILoggerFactory>();
+loggerFactory.AddFile(builder.Configuration["Logging:LogFilePath"].ToString());
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

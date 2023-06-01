@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\DALToDo\\DALToDo.csproj": {}
+    "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj": {}
   },
   "projects": {
-    "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
+    "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\DALToDo\\DALToDo.csproj",
+        "projectUniqueName": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj",
         "projectName": "DALToDo",
-        "projectPath": "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\DALToDo\\DALToDo.csproj",
-        "packagesPath": "C:\\Users\\maxsh\\.nuget\\packages\\",
-        "outputPath": "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\DALToDo\\obj\\",
+        "projectPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj",
+        "packagesPath": "C:\\Users\\vvbog\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\Visual studio SDK\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\maxsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\vvbog\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,6 +59,10 @@
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Serilog.Extensions.Logging.File": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             }
           },
           "imports": [

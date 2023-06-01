@@ -1,0 +1,5 @@
+2023-06-01T00:00:21.2768962+03:00  [INF] Now listening on: "https://localhost:7256" (d826f4b8)
+2023-06-01T00:00:21.2823035+03:00  [INF] Now listening on: "http://localhost:5256" (d826f4b8)
+2023-06-01T00:00:21.2960592+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-01T00:00:21.3067992+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-06-01T00:00:21.3082744+03:00  [INF] Content root path: "D:\Work\Programing\SoftServe\ToDoAPI\ToDoAPI\" (b5d60022)

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {}
+    "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {}
   },
   "projects": {
-    "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {
+    "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\BLLToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
+        "projectUniqueName": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
         "projectName": "BLLToDo",
-        "projectPath": "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
-        "packagesPath": "C:\\Users\\maxsh\\.nuget\\packages\\",
-        "outputPath": "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\BLLToDo\\obj\\",
+        "projectPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\BLLToDo.csproj",
+        "packagesPath": "C:\\Users\\vvbog\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\BLLToDo\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\Visual studio SDK\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\maxsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\vvbog\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
-                "projectPath": "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\DALToDo\\DALToDo.csproj"
+              "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
+                "projectPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj"
               }
             }
           }
@@ -56,6 +51,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Serilog.Extensions.Logging.File": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             }
           },
           "imports": [
@@ -78,21 +77,17 @@
         }
       }
     },
-    "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
+    "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\DALToDo\\DALToDo.csproj",
+        "projectUniqueName": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj",
         "projectName": "DALToDo",
-        "projectPath": "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\DALToDo\\DALToDo.csproj",
-        "packagesPath": "C:\\Users\\maxsh\\.nuget\\packages\\",
-        "outputPath": "E:\\ProgramingProject\\TESTToDoApi\\ToDoAPI\\DALToDo\\obj\\",
+        "projectPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\DALToDo.csproj",
+        "packagesPath": "C:\\Users\\vvbog\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\Programing\\SoftServe\\ToDoAPI\\DALToDo\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\Visual studio SDK\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\maxsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\vvbog\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -100,7 +95,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -138,6 +132,10 @@
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Serilog.Extensions.Logging.File": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             }
           },
           "imports": [
