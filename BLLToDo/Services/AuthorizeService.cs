@@ -27,10 +27,18 @@ namespace BLLToDo.Services
 
         public async Task<ResponseMessage> SignUp(UserRegParam paramUser)
         {
-            var userExists = await _userManager.FindByNameAsync(paramUser.UserName);
+            var userExistsByEmail = await _userManager.FindByEmailAsync(paramUser.Email);
+            if (userExistsByEmail != null)
+                return new ResponseMessage() { Status = "Error", Message = "Email is already registered!" };
 
+            var userExists = await _userManager.FindByNameAsync(paramUser.UserName);
             if (userExists != null)
                 return new ResponseMessage() { Status = "Error", Message = "User already exists!" };
+
+            if (paramUser.Password.Length < 8 || !paramUser.Password.Any(char.IsUpper) || (!paramUser.Password.Any(char.IsSymbol) && !paramUser.Password.Any(char.IsPunctuation)))
+                return new ResponseMessage() { Status = "Error", Message = "Password must be 8+ characters with at least one uppercase letter and one special character or punctuation mark." };
+
+
 
             var user = new IdentityUser()
             {
@@ -57,20 +65,29 @@ namespace BLLToDo.Services
         public async Task<ResponseMessage> SignIn(UserLogParam paramUser)
         {
             var user = await _userManager.FindByNameAsync(paramUser.UserName);
+
+            if (user == null)
+            {
+                _logger.LogError("Failed to sign in - User not found at:" + DateTime.Now);
+                return new ResponseMessage() { Status = "Error", Message = "User not found!" };
+            }
+
             var result = await _signInManager.PasswordSignInAsync(user, paramUser.Password, false, false);
             if (result.Succeeded)
             {
                 IEnumerable<Claim> claims = await _userManager.GetClaimsAsync(user);
                 var token = GetToken(claims);
-                _logger.LogInformation("User logined at:" + DateTime.Now);
+                _logger.LogInformation("User logged in at:" + DateTime.Now);
                 return new ResponseMessage() { Token = new JwtSecurityTokenHandler().WriteToken(token), Message = "Login success!" };
-
             }
-            _logger.LogError("Failed to signed in at:" + DateTime.Now);
-            return new ResponseMessage() { Status = "Error", Message = "User not found!" };
+
+            _logger.LogError("Failed to sign in at:" + DateTime.Now);
+            return new ResponseMessage() { Status = "Error", Message = "Invalid password!" };
         }
 
-        private JwtSecurityToken GetToken(IEnumerable<Claim> cl)
+      
+
+            private JwtSecurityToken GetToken(IEnumerable<Claim> cl)
         {
             var claims = cl.ToList();
             var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_options["JWT:SecretKey"]));
